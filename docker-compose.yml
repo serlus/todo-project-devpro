@@ -22,7 +22,7 @@ services:
     volumes:
       - ~/.postgres/todo_db/data/postgresql:/var/lib/postgresql/data
     ports:
-      - "5432:5432"
+      - "5436:5432"
     environment:
       - POSTGRES_DBS=todo, todo_test
       - POSTGRES_USER=postgres
